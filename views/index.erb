@@ -2,35 +2,8 @@
     <h1>Premailer</h1>
 
     <p class="lede">Pre-flight for HTML email.</p>
-    <div class="body">
 
-      <div class="announcement" style="background-color: #ffffe0; margin-bottom: 24px;">
-        <h2><span style="background-color: #ffffe0;">April 7 update</span></h2>
-      <p>Mr. Templates has spun up a copy of Premailer running on their own servers, give the app a new home for the immediate future.</p>
-
-      <p>Thanks to Mr. Templates for taking the app on.  You can <a href="https://www.mrtemplates.com/premailer/">check out Premailer's new home here</a>: <a href="https://www.mrtemplates.com/premailer/">mrtemplates.com/premailer</a>.</p>
-
-      <p>🥳</p>
-    </div>
-
-      <div class="announcement" style="background-color: #ffffe0;">
-        <h2><span style="background-color: #ffffe0;">Premailer will be shutting down</span></h2>
-
-        <p>Premailer has been chewing through HTML email templates since 2007(!) and has been used by 10s of thousands of people to make working with HTML email a little less horrible.</p>
-
-        <p>We are no longer able to keep it running.  Would you like to?  Here's what is involved...</p>
-
-        <ul>
-          <li>You setup a Heroku account (or Ruby hosting of your choice)</li>
-          <li>Set up an S3 bucket</li>
-          <li>Fork <a href="https://github.com/alexdunae/premailer-site/">the git repository</a> and get your version up and running</li>
-          <li>Let me know ( code [at] dunae [dot] ca ) and we can direct people to your version :)
-        </ul>
-
-        <p>Be forewarned, the code is old and hasn't received much love.  The dependencies are largely up-to-date though and getting running on Heroku should be pretty easy.
-
-      </div>
-
+    <h3 style="text-center">Please choose between the two</h3>
 
     <form method="post" action="/" id="premailer_form">
       <div class="field text">
@@ -47,7 +20,7 @@
 
       <div class="field textarea">
         <label class="toggle" id="process_html_label">Paste HTML as the source
-          <pspan class="sublabel">Make sure you use absolute URLs.</p>
+          <p class="sublabel">Make sure you use absolute URLs.</p>
         </label>
 
         <span id="process_html">
@@ -78,55 +51,7 @@
     <div class="field button">
         <button type="submit" class="submit">Submit</button>
     </div>
-    </form>
+  </form>
 
 
 
-<div class="thanks meta">Many thanks to <a href="http://www.campaignmonitor.com/">Campaign Monitor</a>, Premailer&rsquo;s sponsor.  They do all this inline CSS voodoo automatically each time you send a message, and their <a href="http://www.campaignmonitor.com/features/screens/send-create.aspx">interface</a> is pretty, easy and powerful. If you haven't checked them out yet we heartily recommend you do.</div>
-
-
-
-  <div id="about-premailer">
-  <h2><span>What is this?</span></h2>
-
-  <p>For the best HTML e-mail delivery results, CSS should be inline.  This is a huge pain and a simple newsletter becomes un-managable very quickly.  This script is our solution.</p>
-
-  <ul class="big">
-    <li>CSS styles are converted to inline style attributes<br />
-
-        <span class="sub">Checks <tt>style</tt> and <tt>link[rel=stylesheet]</tt> tags and preserves existing inline attributes</span>
-    </li>
-    <li>Relative paths are converted to absolute paths<br />
-        <span class="sub">Checks links in <tt>href</tt>, <tt>src</tt> and CSS <tt>url('')</tt></span>
-
-    </li>
-    <li>CSS properties are checked against e-mail client capabilities<br />
-        <span class="sub">Based on the <a href="http://www.email-standards.org/">Email Standards Project&rsquo;s guides</a></span>
-    </li>
-    <li>A plain text version is created</li>
-  </ul>
-
-  <p>A few things to note:</p>
-  <ul>
-    <li>Things can get messy very quickly with the <tt>*</tt> selector&mdash;be careful</li>
-    <li>Only the <tt>screen</tt>, <tt>handheld</tt> and <tt>all</tt> media types are processed</li>
-  </ul>
-
-
-  <h2><span>Bookmarklet</span></h2>
-
-  <p>If you&rsquo;re using Firefox 3+, you can use a bookmarklet as a shortcut to processing pages.</p>
-
-  <p>To install, drag this link up to your toolbar: <a style="background: #eee none; padding: 2px 4px; border: 1px solid #ccc;" title="Make CSS inline with Premailer" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://premailer.dialect.ca/inc/bookmarklet-1.0.js';})();">Premailer</a></p>
-
-  <h2><span>Premailer API</span></h2>
-
-  <p>A beta API for Premailer is now available.  See the <a href="/api">API documentation</a> for details.</p>
-
-
-  <h2><span>Under the hood</span></h2>
-
-  <p>Premailer is written in Ruby, with a lot of help from Nokogiri, Hpricot and the <a href="http://www.sinatrarb.com/">Sinatra</a> framework (goodbye eruby).  The source is available on <a href="http://github.com/alexdunae/premailer/">GitHub</a>.</p>
-
-  <p>Written by Alex Dunae at Dialect. Copyright 2007-.</p>
-</div>
