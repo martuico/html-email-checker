@@ -1,7 +1,3 @@
-### Premailer web interface
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 For local development, copy `.env.sample` to `.env` and update with your S3 credentials.
 
 ```
