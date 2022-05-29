@@ -10,4 +10,4 @@ bundle exec rackup
 ```
 
 If you begin hosting a web version please let me know so I can link you from the
-original Premailer site.  code [at] dunae [dot] ca.
+original Premailer site. 
